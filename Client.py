@@ -1,5 +1,5 @@
-from homeWork.hangman.GameStatus import GameStatus
-from homeWork.hangman.Game import Game
+from GameStatus import GameStatus
+from Game import Game
 
 
 def joined_letters(ltr):
@@ -18,7 +18,13 @@ while game.game_status == GameStatus.IN_PROGRESS:
     print(f'Remaining tries = {game.remaining_tries}')
     print(f'Tried letters: {joined_letters(game.tried_letters)}')
 if game.game_status == GameStatus.LOST:
-    print("You're hanged!")
+    print(r"""You're hanged!
+        ____________
+        |          |
+        |         \O/
+        |          |
+        |         / \
+        |_____________""")
     print(f'The word was: {game.word}')
 else:
     print('Congratulations! You won!')

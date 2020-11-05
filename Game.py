@@ -1,8 +1,8 @@
 import random
 from typing import Iterable, List
 
-from homeWork.hangman.GameStatus import GameStatus
-from homeWork.hangman.IOE import InvalidOperationException
+from GameStatus import GameStatus
+from IOE import InvalidOperationException
 
 
 class Game:
